@@ -32,13 +32,14 @@ Install the requirements from the requirements.txt file by running the following
 pip install -r requirements.txt
 ```
 ---
-### Downloading base data:
+### Preparing base dataset:
+Run the script using the following command in the terminal:
 ```shell
-Under construction
+python src/prepare_base_dataset.py
 ```
 ---
 ### Running the script:
-Run the script using the following command in the terminal:
+Run the script using the following structure:
 ```shell
 python src/dataset_generator.py [-i <input-dir>] [-o <output-dir>] [-rc <rir-configs-path>] [-ac <anec-configs-path>] [-ps <preset-size>] [-p <processes>] [-s]
 ```
