@@ -1,0 +1,22 @@
+{
+    "tiny": {
+        "guitar": 100,
+        "song": 100,
+        "speech": 100  
+    },
+    "small": {
+        "guitar": 500,
+        "song": 500,
+        "speech": 500  
+    },
+    "medium": {
+        "guitar": 1012,
+        "song": 1012,
+        "speech": 1012  
+    },
+    "large": {
+        "guitar": "all",
+        "song": "all",
+        "speech": "all" 
+    }
+}

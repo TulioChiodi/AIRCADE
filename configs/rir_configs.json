@@ -1,0 +1,64 @@
+{
+    "tiny": {
+        "filenames": [
+            "rir_0057.wav",
+            "rir_0035.wav",
+            "rir_0003.wav",
+            "rir_0043.wav",
+            "rir_0008.wav"  
+        ]
+    },
+    "small": {
+        "filenames": [
+            "rir_0057.wav",
+            "rir_0028.wav",
+            "rir_0035.wav",
+            "rir_0060.wav",
+            "rir_0003.wav",
+            "rir_0053.wav",
+            "rir_0043.wav",
+            "rir_0047.wav",
+            "rir_0008.wav"              
+        ]
+    },
+    "medium": {
+        "filenames": [
+            "rir_0057.wav",
+            "rir_0058.wav",
+            "rir_0025.wav",
+            "rir_0019.wav",
+            "rir_0028.wav",
+            "rir_0033.wav",
+            "rir_0031.wav",
+            "rir_0034.wav",
+            "rir_0035.wav",
+            "rir_0030.wav",
+            "rir_0038.wav",
+            "rir_0020.wav",
+            "rir_0060.wav",
+            "rir_0026.wav",
+            "rir_0004.wav",
+            "rir_0001.wav",
+            "rir_0003.wav",
+            "rir_0018.wav",
+            "rir_0017.wav",
+            "rir_0016.wav",
+            "rir_0053.wav",
+            "rir_0052.wav",
+            "rir_0054.wav",
+            "rir_0051.wav",
+            "rir_0043.wav",
+            "rir_0007.wav",
+            "rir_0063.wav",
+            "rir_0045.wav",
+            "rir_0047.wav",
+            "rir_0000.wav",
+            "rir_0064.wav",
+            "rir_0050.wav",
+            "rir_0008.wav"            
+        ]
+    },
+    "large": {
+        "filenames": "all"
+    }
+}

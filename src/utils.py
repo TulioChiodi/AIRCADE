@@ -3,7 +3,7 @@ import itertools
 from multiprocessing import Pool
 import os
 from pathlib import Path
-from typing import Union, Tuple, List
+from typing import Union, Tuple, List, Literal
 
 import librosa
 import numpy as np
@@ -63,6 +63,65 @@ def generate_dataframe(dirpath: Union[str, Path]) -> pd.DataFrame:
     dataframe = process_data_filepaths(dataframe)
 
     return dataframe
+
+
+def filter_dataframe(dataframe: pd.DataFrame, rirs: pd.Series, anecs: pd.Series) -> pd.DataFrame:
+    """Filter the dataframe.
+    :param dataframe: Dataframe containing the dataset file informations.
+    :type dataframe: pd.DataFrame
+    :param rirs: List of rirs to keep.
+    :type rirs: List[Union[str, Path]]
+    :param anechoic_samples_number: Number of anechoic samples to keep.
+    :type anechoic_samples_number: int
+    :return: Dataframe containing the filtered dataset file informations.
+    :rtype: pd.DataFrame
+    """
+    # Filter the dataframe.
+    if rirs.filenames == 'all':
+        dataframe_rirs = dataframe[dataframe['audio_type'] == 'impulse_response']
+    else:
+        dataframe_rirs = dataframe[dataframe['filename'].isin(rirs['filenames'])]
+
+    if anecs['guitar'] == 'all':
+        dataframe_anec_guitar = dataframe[dataframe['audio_event'] == 'guitar']
+    else:
+        dataframe_anec_guitar = dataframe[dataframe['audio_event'] == 'guitar'][:anecs["guitar"]]
+
+    if anecs['song'] == 'all':
+        dataframe_anec_song = dataframe[dataframe['audio_event'] == 'song']
+    else:
+        dataframe_anec_song = dataframe[dataframe['audio_event'] == 'song'][:anecs["song"]]
+
+    if anecs['speech'] == 'all':
+        dataframe_anec_speech = dataframe[dataframe['audio_event'] == 'speech']
+    else:
+        dataframe_anec_speech = dataframe[dataframe['audio_event'] == 'speech'][:anecs["speech"]]
+
+    dataframe = pd.concat([dataframe_rirs, dataframe_anec_guitar, dataframe_anec_song, dataframe_anec_speech])
+
+    return dataframe
+
+
+def get_dataframe_preset(dataframe: pd.DataFrame, rir_configs_path: Union[str, Path], anecs_configs_path: Union[str, Path],preset_size: List[Literal['tiny', 'small', 'medium', 'large']]) -> pd.DataFrame:
+    """Get the dataframe preset.
+    :param dataframe: Dataframe containing the dataset file informations.
+    :type dataframe: pd.DataFrame
+    :param size: Size of the dataset.
+    :type size: str
+    :return: Dataframe containing the filtered dataset file informations.
+    :rtype: pd.DataFrame
+    """
+
+    rir_configs = pd.read_json(rir_configs_path)
+    anecs_configs = pd.read_json(anecs_configs_path)
+
+    if preset_size in rir_configs.columns:
+        rirs = rir_configs[preset_size]
+        anecs = anecs_configs[preset_size]
+    else:
+        raise ValueError(f"Error: preset_size {preset_size} is not valid.")
+
+    return filter_dataframe(dataframe, rirs, anecs)
 
 
 def split_audio_types(dataframe: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
