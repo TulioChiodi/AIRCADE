@@ -23,6 +23,9 @@ Clone this repo by running the following command:
 ```shell
 git clone git@github.com:TulioChiodi/AIRCADE.git
 ```
+*obs.: use https clone if your SSH key is not configured.*
+
+
 cd into the project by running the following command:
 ```shell
 cd AIRCADE
