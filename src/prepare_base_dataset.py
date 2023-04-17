@@ -33,3 +33,7 @@ for filename in filenames:
 for filename in filenames:
     if filename.endswith(".zip"):
         (dst_dir / filename).unlink()
+
+# remove .ini files
+for filename in dst_dir.glob("**/*.ini"):
+    filename.unlink()
