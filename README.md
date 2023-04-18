@@ -1,15 +1,25 @@
 # AIRCADE
-Anechoic and IR Convolution-based Auralization Data Compilation Ensemble
+Anechoic and IR Convolution-based Auralization Data-compilation Ensemble
 
-[AIRCADE](https://zenodo.org/record/7818761#.ZDrig3bMJPZ) is a data-compilation ensemble of anechoic [speech and song samples](https://zenodo.org/record/1188976#.ZDrm6HbMJPY), together with [acoustic guitar sounds](https://zenodo.org/record/3371780#.YcCtvmjMJPY), with original annotations pertinent to emotion recognition and Music Information Retrieval (MIR). Moreover, it includes a selection of [impulse response (IR) samples](https://www.openair.hosted.york.ac.uk/) with varying RT values, providing a wide range of reverberation conditions for evaluation. It is primarily intended to serve as a resource for researchers in the field of dereverberation, particularly for data-driven approaches.
+[AIRCADE](https://zenodo.org/record/7818761#.ZDrig3bMJPZ) is a data-compilation ensemble, primarily intended to serve as a resource for researchers in the field of dereverberation, particularly for data-driven approaches. It comprises [speech and song samples](https://zenodo.org/record/1188976#.ZDrm6HbMJPY), together with [acoustic guitar sounds](https://zenodo.org/record/3371780#.YcCtvmjMJPY), with original annotations pertinent to emotion recognition and Music Information Retrieval (MIR). Moreover, it includes a selection of [Impulse Response (IR) samples](https://www.openair.hosted.york.ac.uk/) with varying Reverberation Time (RT) values, providing a wide range of conditions for evaluation. This data-compilation can be used together with provided Python scripts, for generating auralized data ensembles in different sizes: *tiny*, *small*, *medium* and *large*. Additionally, the provided metadata annotations also allow for further analysis and investigation of the performance of dereverberation algorithms under different conditions. All data is licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-This data-compilation can be used together with [Python scripts](https://github.com/TulioChiodi/AIRCADE/tree/main/src), for generating auralized data ensembles in different sizes: *tiny*, *small*, *medium* and *large*.  **NOTICE**: the *large* version will require **200 GB** of free space, approximately.
+## About the sizeable versions
 
-Additionally, the provided metadata also allows for further analysis and investigation of the performance of dereverberation algorithms under different conditions. All data is licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+The data-compilation is hosted at [Zenodo](https://zenodo.org/record/7818761#.ZDrig3bMJPZ), with an approximate total file size of 1.3 GB. For simplicity, all samples in our data-compilation were renamed, e.g., *guitar\_0000*, *rir\_0000*, *song\_0000*, *speech\_0000*, and so on. The ensemble versions are available in different sizes, from a *tiny* version, with limited data, to a *large* version, with over 300,000 samples. This allows users to choose the most suitable version for their specific research needs. The following table illustrates the differences between all versions, detailing the number of song, speech, guitar, IR and auralized samples in each one, together with their respective total file size and duration.
+
+| Version                      | Tiny            | Small           | Medium  | Large    |
+| ---------------------------- | --------------- | --------------- | ------- | -------  |
+| Song samples                 | 500             | 500             | 1,012   | 1,012    |
+| Speech samples               | 500             | 500             | 1,012   | 1,440    |
+| Guitar samples               | 500             | 500             | 1,012   | 2,004    |
+| IR samples                   | 5               | 9               | 33      | 65       |
+| Auralized samples            | 1,500           | 13,500          | 100,188 | 302,900  |
+| Total duration               | 3.2 h           | 30.41 h         | 221,77  | 658,08 h |
+| Total file size (required)   | 1.1 GB          | 10.5 GB         | 76.6 GB | 227.5 GB |
 
 ## Usage
 
-### Configuring the environment
+### Environment configuration
 ---
 Create conda environment by running the following command:
 ```shell
@@ -19,7 +29,7 @@ Activate the new environment by running the following command:
 ```shell
 conda activate AIRCADE
 ```
-Clone this repo by running the following command:
+Clone this repository by running the following command:
 ```shell
 git clone git@github.com:TulioChiodi/AIRCADE.git
 ```
@@ -66,5 +76,5 @@ python src/dataset_generator.py -i /path/to/input/directory -o /path/to/output/d
 ```
 
 ---
-## Acknowledgement:
+## Acknowledgements:
 This work was partially supported by the [São Paulo Research Foundation (FAPESP)](https://fapesp.br/), grants #2017/08120-6 and #2019/22795-1.
