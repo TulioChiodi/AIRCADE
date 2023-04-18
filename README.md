@@ -9,9 +9,9 @@ The data-compilation is hosted at [Zenodo](https://zenodo.org/record/7818761#.ZD
 
 | Version                      | Tiny            | Small           | Medium   | Large    |
 | ---------------------------- | --------------- | --------------- | -------- | -------  |
-| Song samples                 | 500             | 500             | 1,012    | 1,012    |
-| Speech samples               | 500             | 500             | 1,012    | 1,440    |
-| Guitar samples               | 500             | 500             | 1,012    | 2,004    |
+| Song samples                 | 100             | 500             | 1,012    | 1,012    |
+| Speech samples               | 100             | 500             | 1,012    | 1,440    |
+| Guitar samples               | 100             | 500             | 1,012    | 2,004    |
 | IR samples                   | 5               | 9               | 33       | 65       |
 | Auralized samples            | 1,500           | 13,500          | 100,188  | 302,900  |
 | Total duration               | 3.2 h           | 30.41 h         | 221,77 h | 658,08 h |
