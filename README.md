@@ -7,15 +7,15 @@ Anechoic and IR Convolution-based Auralization Data-compilation Ensemble
 
 The data-compilation is hosted at [Zenodo](https://zenodo.org/record/7818761#.ZDrig3bMJPZ), with an approximate total file size of 1.3 GB. For simplicity, all samples in our data-compilation were renamed, e.g., *guitar\_0000*, *rir\_0000*, *song\_0000*, *speech\_0000*, and so on. The ensemble versions are available in different sizes, from a *tiny* version, with limited data, to a *large* version, with over 300,000 samples. This allows users to choose the most suitable version for their specific research needs. The following table illustrates the differences between all versions, detailing the number of song, speech, guitar, IR and auralized samples in each one, together with their respective total file size and duration.
 
-| Version                      | Tiny            | Small           | Medium  | Large    |
-| ---------------------------- | --------------- | --------------- | ------- | -------  |
-| Song samples                 | 500             | 500             | 1,012   | 1,012    |
-| Speech samples               | 500             | 500             | 1,012   | 1,440    |
-| Guitar samples               | 500             | 500             | 1,012   | 2,004    |
-| IR samples                   | 5               | 9               | 33      | 65       |
-| Auralized samples            | 1,500           | 13,500          | 100,188 | 302,900  |
-| Total duration               | 3.2 h           | 30.41 h         | 221,77  | 658,08 h |
-| Total file size (required)   | 1.1 GB          | 10.5 GB         | 76.6 GB | 227.5 GB |
+| Version                      | Tiny            | Small           | Medium   | Large    |
+| ---------------------------- | --------------- | --------------- | -------- | -------  |
+| Song samples                 | 500             | 500             | 1,012    | 1,012    |
+| Speech samples               | 500             | 500             | 1,012    | 1,440    |
+| Guitar samples               | 500             | 500             | 1,012    | 2,004    |
+| IR samples                   | 5               | 9               | 33       | 65       |
+| Auralized samples            | 1,500           | 13,500          | 100,188  | 302,900  |
+| Total duration               | 3.2 h           | 30.41 h         | 221,77 h | 658,08 h |
+| Total file size (required)   | 1.1 GB          | 10.5 GB         | 76.6 GB  | 227.5 GB |
 
 ## Usage
 
