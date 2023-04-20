@@ -19,7 +19,7 @@ The data-compilation is hosted at [Zenodo](https://zenodo.org/record/7818761#.ZD
 
 ## Usage
 
-### Environment configuration
+### Environment configuration:
 ---
 Create conda environment by running the following command:
 ```shell
@@ -76,5 +76,20 @@ python src/dataset_generator.py -i /path/to/input/directory -o /path/to/output/d
 ```
 
 ---
-## Acknowledgements:
+## Citation
+
+If you find AIRCADE useful in your research, please cite:
+
+```shell
+@misc{chiodi2023aircade,
+    title={AIRCADE: an Anechoic and IR Convolution-based Auralization Data-compilation Ensemble},
+    author={Túlio Chiodi and Arthur dos Santos and Pedro Martins and Bruno Masiero},
+    year={2023},
+    eprint={2304.09318},
+    archivePrefix={arXiv},
+    primaryClass={eess.AS}
+}
+
+```
+## Acknowledgements
 This work was partially supported by the [São Paulo Research Foundation (FAPESP)](https://fapesp.br/), grants #2017/08120-6 and #2019/22795-1.
