@@ -16,7 +16,7 @@ filenames = [
     "song.zip",
     "speech.zip",
     "rir.zip",
-    "metadata.zip",
+    "metadata_csv.zip",
     "md5sums.txt"
 ]
 
