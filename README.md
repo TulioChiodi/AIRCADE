@@ -94,4 +94,4 @@ If you find AIRCADE useful in your research, please cite:
 
 ```
 ## Acknowledgements
-This work was partially supported by the [São Paulo Research Foundation (FAPESP)](https://fapesp.br/), grants #2017/08120-6 and #2019/22795-1.
+This work was partially supported by the [São Paulo Research Foundation (FAPESP)](https://fapesp.br/), grants #2017/08120-6, #2019/22795-1 and #2022/16168-7.
