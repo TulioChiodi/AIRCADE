@@ -14,7 +14,7 @@ The data-compilation is hosted at [Zenodo](https://zenodo.org/record/7818761#.ZD
 | Guitar samples               | 100             | 500             | 1,012    | 2,004    |
 | IR samples                   | 5               | 9               | 33       | 65       |
 | Auralized samples            | 1,500           | 13,500          | 100,188  | 289,640  |
-| Total duration               | 3.2 h           | 30.41 h         | 221,77 h | 658,08 h |
+| Total duration               | 3.2 h           | 30.41 h         | 221.77 h | 658.08 h |
 | Total file size (required)   | 1.1 GB          | 10.5 GB         | 76.6 GB  | 227.5 GB |
 
 For more information, please refer to our data paper on [ArXiv](https://arxiv.org/abs/2304.09318).
